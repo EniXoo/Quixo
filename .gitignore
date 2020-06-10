@@ -9,7 +9,6 @@
 *.log
 *.html
 doc/
-*.jar
 
 # Pour eclipse
 .metadata
