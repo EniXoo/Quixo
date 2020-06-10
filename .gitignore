@@ -1,0 +1,31 @@
+# Les fichiers à ne pas mettre sur le GIT !
+
+*.class
+*.bak
+*.swp
+\#*
+.\#*
+*~
+*.log
+*.html
+doc/
+*.jar
+
+# Pour eclipse
+.metadata
+bin/
+.settings/
+.loadpath
+.recommenders
+*.launch
+
+# Pour intelliJ
+.idea
+.gradle
+out/
+
+# Pour vscode
+.vscode
+!.vscode
+*.code-workspace
+

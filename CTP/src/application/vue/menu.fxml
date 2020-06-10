@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.241" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controleur.Controleur">
+	<top>
+		<MenuBar BorderPane.alignment="CENTER">
+			<menus>
+				<Menu mnemonicParsing="false" text="Partie">
+					<items>
+						<MenuItem mnemonicParsing="false" onAction="#onNouvelle" text="Nouvelle" />
+						<MenuItem mnemonicParsing="false" onAction="#onQuitter" text="Quitter" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="?">
+					<items>
+						<MenuItem mnemonicParsing="false" onAction="#onAPropos" text="A Propos" />
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+	</top>
+   <bottom>
+      <Label fx:id="joueurTourCourant" text="" BorderPane.alignment="BOTTOM_LEFT" />
+   </bottom>
+   <center>
+      <GridPane maxHeight="50.0" maxWidth="50.0" prefHeight="50.0" prefWidth="50.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="50.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+         	<Rectangle fx:id="rect00" arcHeight="5.0" arcWidth="5.0" fill="#DEB887" height="45.0" onMousePressed="#onPress" stroke="BLACK" strokeType="INSIDE" width="45.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+         	<Rectangle fx:id="rect10" arcHeight="5.0" arcWidth="5.0" fill="#DEB887" height="45.0" onMousePressed="#onPress" stroke="BLACK" strokeType="INSIDE" width="45.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+         	<Rectangle fx:id="rect20" arcHeight="5.0" arcWidth="5.0" fill="#DEB887" height="45.0" onMousePressed="#onPress" stroke="BLACK" strokeType="INSIDE" width="45.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+         	<Rectangle fx:id="rect30" arcHeight="5.0" arcWidth="5.0" fill="#DEB887" height="45.0" onMousePressed="#onPress" stroke="BLACK" strokeType="INSIDE" width="45.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+         	<Rectangle fx:id="rect40" arcHeight="5.0" arcWidth="5.0" fill="#DEB887" height="45.0" onMousePressed="#onPress" stroke="BLACK" strokeType="INSIDE" width="45.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Rectangle fx:id="rect01" arcHeight="5.0" arcWidth="5.0" fill="#DEB887" height="45.0" onMousePressed="#onPress" stroke="BLACK" strokeType="INSIDE" width="45.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <Rectangle fx:id="rect11" arcHeight="5.0" arcWidth="5.0" fill="#DEB887" height="45.0" onMousePressed="#onPress" stroke="BLACK" strokeType="INSIDE" width="45.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <Rectangle fx:id="rect21" arcHeight="5.0" arcWidth="5.0" fill="#DEB887" height="45.0" onMousePressed="#onPress" stroke="BLACK" strokeType="INSIDE" width="45.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <Rectangle fx:id="rect31" arcHeight="5.0" arcWidth="5.0" fill="#DEB887" height="45.0" onMousePressed="#onPress" stroke="BLACK" strokeType="INSIDE" width="45.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <Rectangle fx:id="rect41" arcHeight="5.0" arcWidth="5.0" fill="#DEB887" height="45.0" onMousePressed="#onPress" stroke="BLACK" strokeType="INSIDE" width="45.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <Rectangle fx:id="rect02" arcHeight="5.0" arcWidth="5.0" fill="#DEB887" height="45.0" onMousePressed="#onPress" stroke="BLACK" strokeType="INSIDE" width="45.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Rectangle fx:id="rect12" arcHeight="5.0" arcWidth="5.0" fill="#DEB887" height="45.0" onMousePressed="#onPress" stroke="BLACK" strokeType="INSIDE" width="45.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Rectangle fx:id="rect22" arcHeight="5.0" arcWidth="5.0" fill="#DEB887" height="45.0" onMousePressed="#onPress" stroke="BLACK" strokeType="INSIDE" width="45.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Rectangle fx:id="rect32" arcHeight="5.0" arcWidth="5.0" fill="#DEB887" height="45.0" onMousePressed="#onPress" stroke="BLACK" strokeType="INSIDE" width="45.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Rectangle fx:id="rect42" arcHeight="5.0" arcWidth="5.0" fill="#DEB887" height="45.0" onMousePressed="#onPress" stroke="BLACK" strokeType="INSIDE" width="45.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Rectangle fx:id="rect03" arcHeight="5.0" arcWidth="5.0" fill="#DEB887" height="45.0" onMousePressed="#onPress" stroke="BLACK" strokeType="INSIDE" width="45.0" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+            <Rectangle fx:id="rect13" arcHeight="5.0" arcWidth="5.0" fill="#DEB887" height="45.0" onMousePressed="#onPress" stroke="BLACK" strokeType="INSIDE" width="45.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+            <Rectangle fx:id="rect23" arcHeight="5.0" arcWidth="5.0" fill="#DEB887" height="45.0" onMousePressed="#onPress" stroke="BLACK" strokeType="INSIDE" width="45.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+            <Rectangle fx:id="rect33" arcHeight="5.0" arcWidth="5.0" fill="#DEB887" height="45.0" onMousePressed="#onPress" stroke="BLACK" strokeType="INSIDE" width="45.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+            <Rectangle fx:id="rect43" arcHeight="5.0" arcWidth="5.0" fill="#DEB887" height="45.0" onMousePressed="#onPress" stroke="BLACK" strokeType="INSIDE" width="45.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+            <Rectangle fx:id="rect04" arcHeight="5.0" arcWidth="5.0" fill="#DEB887" height="45.0" onMousePressed="#onPress" stroke="BLACK" strokeType="INSIDE" width="45.0" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+            <Rectangle fx:id="rect14" arcHeight="5.0" arcWidth="5.0" fill="#DEB887" height="45.0" onMousePressed="#onPress" stroke="BLACK" strokeType="INSIDE" width="45.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+            <Rectangle fx:id="rect24" arcHeight="5.0" arcWidth="5.0" fill="#DEB887" height="45.0" onMousePressed="#onPress" stroke="BLACK" strokeType="INSIDE" width="45.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+            <Rectangle fx:id="rect34" arcHeight="5.0" arcWidth="5.0" fill="#DEB887" height="45.0" onMousePressed="#onPress" stroke="BLACK" strokeType="INSIDE" width="45.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+            <Rectangle fx:id="rect44" arcHeight="5.0" arcWidth="5.0" fill="#DEB887" height="45.0" onMousePressed="#onPress" stroke="BLACK" strokeType="INSIDE" width="45.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>
